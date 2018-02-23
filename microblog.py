@@ -196,8 +196,5 @@ def update_records():
 			ws.cell(row=i, column=2, value=get_prediction())
 			wb.save()
 			return
-		else:
-			return 'No more space in workbook'
-
 			
 	

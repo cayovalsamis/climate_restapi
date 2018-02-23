@@ -1,10 +1,14 @@
 {
     "dev": {
-        "app_function": "microblog.app", 
+        "app_function": "Flask.app", 
         "aws_region": "sa-east-1", 
         "profile_name": "default", 
-        "project_name": "app", 
+        "project_name": "climate-restapi", 
         "runtime": "python2.7", 
-        "s3_bucket": "zappa-2g8dltzef"
+        "s3_bucket": "zappa-itl5i6lm2"
+	“events”: [{
+		“function”: “microblog.your_function”,
+		“expression”: “rate(24 hours)”
+	}]
     }
 }
